@@ -1,0 +1,13 @@
+﻿{
+  "name": "$name$",
+  "type": "Microsoft.Web/serverfarms",
+  "kind": "linux",
+  "location": "Central US",
+  "sku": {
+    "name": "B1",
+    "tier": "Basic",
+    "size": "B1",
+    "family": "B",
+    "capacity": 1
+  }
+}

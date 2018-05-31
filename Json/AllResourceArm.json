@@ -1,0 +1,9 @@
+﻿{
+  "properties": {
+    "templateLink": {
+      "uri": "https://raw.githubusercontent.com/Akshayvh94/armtemplates/master/Templates/TextAnalytics/dynamicArm.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "mode": "Incremental"
+  }
+}

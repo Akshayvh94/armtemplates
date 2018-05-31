@@ -1,0 +1,20 @@
+﻿{
+  "kind": "GlobalDocumentDB",
+  "type": "Microsoft.DocumentDb/databaseAccounts",
+  "location": "Central US",
+  "properties": {
+    "databaseAccountOfferType": "Standard",
+    "locations": [
+      {
+        "failoverPriority": 0,
+        "locationName": "CentralUS"
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "EnableGremlin"
+      }
+    ],
+    "isVirtualNetworkFilterEnabled": false
+  }
+}

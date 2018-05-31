@@ -1,0 +1,33 @@
+﻿{
+  "location": "centralus",
+  "name": "$AcsName$",
+  "properties": {
+    "orchestratorProfile": {
+      "orchestratorType": "DCOS"
+    },
+    "masterProfile": {
+      "count": 1,
+      "dnsPrefix": "$AcsName$-$ResourceGroupName$-$Rand$m",
+      "fqdn": "$AcsName$-$ResourceGroupName$-$Rand$.centralus.cloudapp.azure.com"
+    },
+    "agentPoolProfiles": [
+      {
+        "name": "$AcsName$pool",
+        "count": 1,
+        "vmSize": "Standard_D2_v2",
+        "dnsPrefix": "$AcsName$-$ResourceGroupName$-$Rand$a",
+        "fqdn": "$AcsName$-$ResourceGroupName$-$Rand$.centralus.cloudapp.azure.com"
+      }
+    ],
+    "linuxProfile": {
+      "ssh": {
+        "publicKeys": [
+          {
+            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkDEhMMPLYQdYuP5t59hBjV6GZSMDFbM89kvmUDAxzH4lLX1Sv4aAoKb8GdByN/qbGnn0MfWbD3BVzkPLWJs/8S2R5X6kjk9zqBqC8BRz5nz7MOLDa1bknNDpKTg9L/WK9LmtNMbdsGhq7+f9GsP2fuU1zXBKGdHjoY/UtOfOn0RFTFdDEGapYpWjkw9dkisDF+qtkS14ovMIpzAGKTkD1vfuzqlsxOVvDKCckezGqdLelDJcoFO8sxkW0bFzBXTwXu19YRlcUFE+pDMwHRYtXliNKKhjw0TbjCyraNto92m0KymuzMktxBn96UL0eWI/yQmfNDnsAqMQHyW1EC/lIw== rsa-key-20180525 user@hostname.local\n"
+          }
+        ]
+      },
+      "adminUsername": "azureuser"
+    }
+  }
+}

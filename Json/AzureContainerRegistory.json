@@ -1,0 +1,9 @@
+﻿{
+  "location": "CentralUS",
+  "sku": {
+    "name": "Standard"
+  },
+  "properties": {
+    "adminUserEnabled": true
+  }
+}

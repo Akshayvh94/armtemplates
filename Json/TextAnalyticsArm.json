@@ -1,0 +1,13 @@
+﻿{
+  "properties": {
+    "templateLink": {
+      "uri": "https://raw.githubusercontent.com/Akshayvh94/armtemplates/master/Templates/TextAnalytics/template.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "mode": "Incremental",
+    "parametersLink": {
+      "uri": "https://raw.githubusercontent.com/Akshayvh94/armtemplates/master/Templates/TextAnalytics/parameters.json",
+      "contentVersion": "1.0.0.0"
+    }
+  }
+}
