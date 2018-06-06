@@ -89,6 +89,7 @@
             },
             "dependsOn": []
         },
+
         {
             "type": "Microsoft.Web/serverfarms",
             "sku": {
@@ -105,8 +106,8 @@
             "scale": null,
             "properties": {
                 "name": "[concat('appserlinux', uniqueString(resourceGroup().id))]",
-                "workerTierName": null,
-                "adminSiteName": null,
+                "workerTierName": "",
+                "adminSiteName": "",
                 "hostingEnvironmentProfile": null,
                 "perSiteScaling": false,
                 "reserved": false,
