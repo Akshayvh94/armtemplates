@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "BingMapsAPIpublisherId": {
+            "type": "string",
+            "defaultValue": "bingmaps"
+        },
+        "BingMapsAPIofferId": {
+            "type": "string",
+            "defaultValue": "mapapis"
+        },
+        "BingMapsAPIplanId": {
+            "type": "string",
+            "defaultValue": "public1"
+        }
+    },
+    "variables": {
+        "bingmapsname": "[concat('sh360bingapp', uniqueString(resourceGroup().id))]"
+    },
+    "resources": [
+        {
+            "type": "Microsoft.BingMaps/mapApis",
+            "name": "[variables('bingmapsname')]",
+            "apiVersion": "2016-08-18",
+            "location": "[resourceGroup().location]",
+            "plan": {
+                "publisher": "[parameters('BingMapsAPIpublisherId')]",
+                "product": "[parameters('BingMapsAPIofferId')]",
+                "name": "[parameters('BingMapsAPIplanId')]"
+            },
+            "tags": {},
+            "properties": {}
+        }
+    ]
+}
