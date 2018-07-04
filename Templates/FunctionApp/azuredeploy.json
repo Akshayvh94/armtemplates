@@ -15,7 +15,7 @@
         }
     },
     "variables": {
-        "functionAppName": "[parameters('appName')]",
+        "functionAppName": "[concat(uniquestring(resourceGroup().id), parameters('appName'))]",
         "hostingPlanName": "[parameters('appName')]",
         "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'azfunctions')]",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
