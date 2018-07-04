@@ -23,7 +23,7 @@
             "type": "Microsoft.BingMaps/mapApis",
             "name": "[variables('bingmapsname')]",
             "apiVersion": "2016-08-18",
-            "location": "[resourceGroup().location]",
+            "location": "westus",
             "plan": {
                 "publisher": "[parameters('BingMapsAPIpublisherId')]",
                 "product": "[parameters('BingMapsAPIofferId')]",
