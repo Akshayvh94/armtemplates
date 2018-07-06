@@ -1,13 +1,13 @@
 ﻿{
   "kind": "GlobalDocumentDB",
   "type": "Microsoft.DocumentDb/databaseAccounts",
-  "location": "Central US",
+  "location": "westus",
   "properties": {
     "databaseAccountOfferType": "Standard",
     "locations": [
       {
         "failoverPriority": 0,
-        "locationName": "CentralUS"
+        "locationName": "westus"
       }
     ],
     "isVirtualNetworkFilterEnabled": false

@@ -2,7 +2,7 @@
   "name": "$name$",
   "type": "Microsoft.Web/serverfarms",
   "kind": "linux",
-  "location": "Central US",
+  "location": "westus",
   "sku": {
     "name": "B1",
     "tier": "Basic",
